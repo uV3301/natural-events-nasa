@@ -15,7 +15,7 @@ const Map = ({ eventData, center, zoom }) => {
             lng={ev.geometries[0].coordinates[0]}
             id={ev.categories[0].id}
             onClick={() =>
-              setLocationInfo({ title: ev.title, source: ev.sources[0].url })
+              setLocationInfo({ title: ev.title, source: ev.sources[0].url, latitude: ev.geometries[0].coordinates[1], longitude: ev.geometries[0].coordinates[0], id: ev.categories[0].id})
             }
           />
         );
@@ -26,7 +26,7 @@ const Map = ({ eventData, center, zoom }) => {
             lng={ev.geometries[0].coordinates[0]}
             id={ev.categories[0].id}
             onClick={() =>
-              setLocationInfo({ title: ev.title, source: ev.sources[0].url })
+              setLocationInfo({ title: ev.title, source: ev.sources[0].url, latitude: ev.geometries[0].coordinates[1], longitude: ev.geometries[0].coordinates[0], id: ev.categories[0].id})
             }
           />
         );
@@ -38,7 +38,7 @@ const Map = ({ eventData, center, zoom }) => {
               lng={v.coordinates[0]}
               id={ev.categories[0].id}
               onClick={() =>
-                setLocationInfo({ title: ev.title, source: ev.sources[0].url })
+                setLocationInfo({ title: ev.title, source: ev.sources[0].url, latitude: ev.geometries[0].coordinates[1], longitude: ev.geometries[0].coordinates[0], id: ev.categories[0].id})
               }
             />
           );
