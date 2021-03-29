@@ -44,6 +44,17 @@ const Map = ({ eventData, center, zoom }) => {
           );
         });
         return temp;
+      } else if (ev.categories[0].id === 15) {
+        return (
+          <LocationMarker
+            lat={ev.geometries[0].coordinates[1]}
+            lng={ev.geometries[0].coordinates[0]}
+            id={ev.categories[0].id}
+            onClick={() =>
+              setLocationInfo({ title: ev.title, source: ev.sources[0].url, latitude: ev.geometries[0].coordinates[1], longitude: ev.geometries[0].coordinates[0], id: ev.categories[0].id})
+            }
+          />
+        );
       }
     }
 

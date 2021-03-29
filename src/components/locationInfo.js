@@ -18,7 +18,7 @@ const LocationInfo = ({ info }) => {
           <a href={url}>Open on Google Maps</a>
         </li>
         <li>
-        <CustomModal />
+        <CustomModal id = {info.id}/>
 
           {/* <Popup trigger={<button> Read More </button>} position="right center">
           <div> 

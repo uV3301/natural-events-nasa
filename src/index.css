@@ -25,8 +25,12 @@ body {
   color: rgb(211, 155, 3);
 }
 .storm-icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: rgb(0, 205, 212);
+}
+.snow-icon {
+  font-size: 2.5rem;
+  color: rgb(37, 143, 243);
 }
 
 .loader {
@@ -101,18 +105,25 @@ body {
 }
 
 .modal {
-  font-size: 12px;
+  font-size: 20px;
 }
 .modal>.header {
   width: 100%;
   border-bottom: 1px solid gray;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
   padding: 5px;
 }
 .modal>.content {
   width: 100%;
-  padding: 10px 5px;
+  padding: 15px 10px;
+}
+.modal>.content>.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height:250px;
 }
 .modal>.actions {
   width: 100%;
@@ -133,3 +144,4 @@ body {
   border-radius: 18px;
   border: 1px solid #cfcece;
 }
+
