@@ -29,7 +29,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div>
+    <div id>
       <Header />
       <h1>{!loading ? <Map eventData={eventData} /> : <Loader />}</h1>
       {/* <h1>{!loading ? <p>data loaded</p> : <Loader />}</h1> */}
