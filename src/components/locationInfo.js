@@ -1,9 +1,13 @@
 // import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-import CustomModal from './popUp';
+import "reactjs-popup/dist/index.css";
+import CustomModal from "./popUp";
 
 const LocationInfo = ({ info }) => {
-  var url = "https://www.google.com/maps?z=12&t=m&q="+String(info.latitude)+"%20,"+String(info.longitude);
+  var url =
+    "https://www.google.com/maps?z=12&t=m&q=" +
+    String(info.latitude) +
+    "%20," +
+    String(info.longitude);
   return (
     <div className="location-info">
       <h2>Event location info</h2>
@@ -15,10 +19,12 @@ const LocationInfo = ({ info }) => {
           <a href={info.source}>Source Link</a>
         </li>
         <li>
-          <a href={url}>Open on Google Maps</a>
+          <a className="anchors" href={url}>
+            Open on Google Maps
+          </a>
         </li>
         <li>
-        <CustomModal id = {info.id}/>
+          <CustomModal id={info.id} />
 
           {/* <Popup trigger={<button> Read More </button>} position="right center">
           <div> 

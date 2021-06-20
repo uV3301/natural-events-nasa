@@ -6,6 +6,12 @@ body {
   overflow: hidden;
 }
 
+a {
+  color:rgba(253, 255, 123, 0.8)
+}
+.anchors {
+  color:rgba(152, 255, 131, 0.8)
+}
 .map {
   width: 100vw;
   height: 100vh;
@@ -22,7 +28,7 @@ body {
 }
 .lava-icon {
   font-size: 2.5rem;
-  color: rgb(211, 155, 3);
+  color: #CF1020;
 }
 .storm-icon {
   font-size: 2.5rem;

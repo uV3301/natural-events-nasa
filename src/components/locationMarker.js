@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import FireIcon from "@iconify/icons-mdi/fire-alert";
-import LavaIcon from "@iconify/icons-mdi/alert";
+import LavaIcon from "@iconify/icons-mdi/terrain";
 import StormIcon from "@iconify/icons-mdi/weather-hurricane";
 import snowflake from "@iconify/icons-mdi/snowflake";
 
